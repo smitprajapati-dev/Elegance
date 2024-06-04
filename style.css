@@ -1,0 +1,74 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+.head {
+    display: flex;    
+    justify-content:space-evenly;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100vw;
+}
+.head-ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    font-size: 1rem;
+}
+.head-ul li{
+    font-size: 0.9em;   
+}
+.head-ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,11,11),rgba(0,0,0,0.5)),url(Images/fotterback.png);
+    background-size: cover;
+}
+
+.About{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #323b45;
+    color: white;
+}
+.About hr{
+    width: 400px;
+    color: black;
+}
+.About p{
+    text-align: center;
+}
+.service{
+    display: flex;
+    background-image: linear-gradient(rgb(237, 52, 175),rgba(215, 7, 181, 0.5)),url(Images/parlex.png);
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn:hover:nth-child(1){
+    background-color: #323b45;    
+}
+
+.btn:hover:nth-child(2){
+    background-color: transparent;    
+}
+.btn:nth-child(1){
+    background-color: transparent;
+}
+.btn:nth-child(2){
+    background-color: #323b45;
+}
