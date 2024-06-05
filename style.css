@@ -1,74 +1,489 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
 .head {
-    display: flex;    
-    justify-content:space-evenly;
-    position: fixed;
-    background-color: aliceblue;
-    width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  background-color: aliceblue;
+  width: 100vw;
 }
-.head-ul{
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    align-items: center;
-    font-size: 1rem;
+.head-ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+  font-size: 1rem;
 }
-.head-ul li{
-    font-size: 0.9em;   
+.head-ul li {
+  font-size: 0.9em;
 }
-.head-ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-main{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(12,11,11),rgba(0,0,0,0.5)),url(Images/fotterback.png);
-    background-size: cover;
+.head-ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-.About{
-    padding: 40px;
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 11, 11), rgba(0, 0, 0, 0.5)),
+    url(Images/fotterback.png);
+  background-size: cover;
+}
+
+.About {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323b45;
+  color: white;
+}
+.About hr {
+  width: 400px;
+  color: black;
+}
+.About p {
+  text-align: center;
+}
+.service {
+  /* display: flex; */
+  background-image: linear-gradient(rgb(237, 52, 175), rgba(215, 7, 181, 0.5)),
+    url(Images/parlex.png);
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.btn:hover:nth-child(1) {
+  background-color: #323b45;
+}
+
+.btn:hover:nth-child(2) {
+  background-color: transparent;
+}
+.btn:nth-child(1) {
+  background-color: transparent;
+}
+.btn:nth-child(2) {
+  background-color: #323b45;
+}
+
+.src-middle {
+  background-color: #323b45;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: white;
+}
+.src-middle-poster {
+  gap: 80px;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 20px;
+}
+.pst-btn {
+  padding: 10px;
+  background-color: #323b45;
+  color: white;
+}
+.pst-btn:hover {
+  background-color: red;
+}
+
+.service .container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.src-what .container {
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 90px; */
+}
+.src-what {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.src-what h3 {
+  font-size: 35px;
+  color: white;
+}
+
+.src-what h4 {
+  font-size: 15px;
+  color: white;
+}
+
+.src-what p {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+.src-logo {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 60px;
+}
+.src-logos {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  width: 180px;
+  color: white;
+}
+.proc {
+  background-color: #00c788;
+  color: white;
+  padding-top: 20px;
+}
+.proc .container {
+  display: flex;
+  flex-direction: column;
+}
+.proc-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proc-text h3 {
+  font-size: 25px;
+}
+.desc {
+  display: flex;
+}
+.desc-rd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.desc-rd h4 {
+  font-size: 25px;
+}
+.desc-rd p {
+  font-size: 14px;
+}
+.round {
+  height: 80px;
+  width: 80px;
+  border: 2px solid white;
+  border-radius: 60px;
+}
+
+.port {
+  /* background-image: linear-gradient(rgb(237, 52, 175), rgba(215, 7, 181, 0.5)),
+  url(Images/parlex.png); */
+  display: flex;
+  flex-direction: column;
+}
+.type1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.type1 h1 {
+  padding-top: 40px;
+  color: white;
+}
+
+.type1 p {
+  margin-top: 30px;
+  color: white;
+  font-size: smaller;
+}
+.container8 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #323b45;
-    color: white;
 }
-.About hr{
-    width: 400px;
-    color: black;
+.type2 {
+  display: flex;
 }
-.About p{
-    text-align: center;
-}
-.service{
-    display: flex;
-    background-image: linear-gradient(rgb(237, 52, 175),rgba(215, 7, 181, 0.5)),url(Images/parlex.png);
-    background-attachment: fixed;
-}
-.container{
-    display: flex;
+.ros {
     align-items: center;
-    justify-content: center;
 }
-.btn{
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.btn:hover:nth-child(1){
-    background-color: #323b45;    
+.def img {
+  border-radius: 10px;
+  height: 20vh;
+  width: 30vh;
+  margin: 10px;
+  border: 5px solid white;
 }
 
-.btn:hover:nth-child(2){
-    background-color: transparent;    
+.main9 {
+  width: 100%;
+  text-align: center;
+  background-color: #00b8b1;
+  height: 100vh;
 }
-.btn:nth-child(1){
-    background-color: transparent;
+
+.bean1 h1 {
+  width: 100%;
+  font-size: 35px;
+  padding-top: 50px;
+  color: white;
 }
-.btn:nth-child(2){
-    background-color: #323b45;
+.bean1 p {
+  width: 100%;
+  padding-top: 40px;
+  color: white;
+}
+
+.han {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.per1 {
+  background-color: #ffce54;
+}
+.per2 {
+  background-color: #ed5565;
+}
+
+.per3 {
+  background-color: #a0d468;
+}
+
+.per4 {
+  background-color: #fc6e51;
+}
+.bean2 {
+  width: 220px;
+  margin-top: 30px;
+  font-size: small;
+
+  border: 2px solid yellow;
+  height: 350px;
+  margin: 20px;
+}
+
+.bean2 h5 {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bean2 h4 {
+  width: 100%;
+  color: white;
+}
+
+.bean2 p {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.but4 button {
+  background-color: #ffce54;
+  margin: 15px;
+}
+.but5 button {
+  background-color: #ed5565;
+  margin: 15px;
+}
+
+.but6 button {
+  background-color: #a0d468;
+  margin: 15px;
+}
+
+.but7 button {
+  background-color: #fc6e51;
+  margin: 15px;
+}
+.main10 {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(51, 61, 58, 0.7),
+      rgba(14, 20, 18, 0.78)
+    ),
+    url(images/team.png);
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.soft1 {
+  width: 100%;
+  color: white;
+}
+.soft1 hr {
+  width: 65%;
+  margin: auto;
+}
+
+.soft1 h1 {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.soft1 h5 {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.container10 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.real {
+  border: 2px solid transparent;
+  width: 250px;
+  height: 400px;
+  background-color: rgba(72, 207, 173, 0.68);
+
+  margin: 30px;
+}
+.real1 {
+  background-color: white;
+  height: 20vh;
+}
+.real1 h3 {
+  width: 100%;
+  padding-top: 20px;
+}
+.real1 h5 {
+  width: 100%;
+  padding-top: 30px;
+}
+.real2 {
+  background-color: #b3b9bf;
+  height: 53px;
+}
+
+.main11 {
+  width: 100%;
+}
+.solid img {
+  width: 10%;
+  margin: 30px;
+}
+.solid {
+  text-align: center;
+}
+
+.main12 {
+  width: 100%;
+  background-color: #ffce54;
+  height: 180vh;
+  text-align: center;
+}
+
+.thing hr {
+  margin: auto;
+  width: 59%;
+  margin-top: 10px;
+  padding-right: 85px;
+}
+
+.thing h5 {
+  width: 100%;
+  padding-top: 25px;
+  color: white;
+}
+.thing h1 {
+  width: 100%;
+  padding-top: 60px;
+  color: white;
+  font-size: x-large;
+}
+
+.container12345 {
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+}
+.thing2 {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin-left: 35px;
+}
+
+.thing3 {
+  width: 90%;
+  height: 30px;
+}
+.thing4 {
+  width: 90%;
+  height: 40px;
+}
+.thing2 button {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 70px;
+  justify-content: center;
+  padding-top: 7px;
+}
+
+.icon122 {
+  float: left;
+  margin-left: 100px;
+  padding-top: 33%;
+  color: white;
+}
+
+.icon12 i {
+  font-size: 50px;
+  padding: 30px;
+}
+
+.icon12 h2 {
+  padding: 10px;
+}
+.main13 {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)),
+    url(images/fotterback.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sts {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+.sts1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+.container13 {
+  width: 100%;
+}
+.stc2 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 18px;
+}
+.stc2 h1 {
+  width: 100%;
+  font-size: small;
 }
